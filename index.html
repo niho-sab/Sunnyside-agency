@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+  <!-- Header with brand and navigation -->
+  <header class="header">
+    <a class="Sunnyside" href="tamrin.html">Sunnyside</a>
+
+    <!-- Hamburger button for mobile -->
+    <button class="menu-toggle" aria-label="toggle menu">
+      <img src="images/icon-hamburger.svg" alt="menu icon">
+    </button>
+
+    <!-- Mobile menu -->
+    <nav class="nav2">
+      <ul class="mobile-menu">
+        <li><a href="tamrin.html">About</a></li>
+        <li><a href="tamrin.html">Services</a></li>
+        <li><a href="tamrin.html">Projects</a></li>
+        <li><a href="tamrin.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop navigation -->
+    <nav class="nav">
+      <a href="tamrin.html" class="header-link">About</a>
+      <a href="tamrin.html" class="header-link">Services</a>
+      <a href="tamrin.html" class="header-link">Projects</a>
+      <a href="tamrin.html" class="header-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- JavaScript to toggle mobile menu -->
+  <script>
+    const menuBtn = document.querySelector('.menu-toggle');
+    const mobileNav = document.querySelector('.nav2');
+
+    menuBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+    });
+  </script>
+
+  <!-- First section: Transform your brand -->
+  <section class="main-flex">
+    <div class="empty">
+      <h1 class="h1">Transform your<br>brand</h1>
+      <p class="p">
+        We are a full-service creative agency specializing in helping brands grow fast.
+        Engage your clients through compelling visuals that do most of the marketing for you.
+      </p>
+      <a class="learn" href="tamrin.html">LEARN MORE</a>
+    </div>
+    <div class="transform"></div>
+  </section>
+
+  <!-- Second section: Stand out -->
+  <section class="main-flex">
+    <div class="stand"></div>
+    <div class="empty">
+      <h1 class="h1">Stand out to the right<br>audience</h1>
+      <p class="p">
+        Using a collaborative formula of designers, researchers,
+        photographers, videographers, and copywriters, we’ll
+        build and extend your brand in digital places.
+      </p>
+      <a class="learn2" href="tamrin.html">LEARN MORE</a>
+    </div>
+  </section>
+
+  <!-- Third section: Design and Photography -->
+  <section class="main-flex">
+    <div class="cherry">
+      <div class="hch">
+        <h2 class="h-green">Graphic design</h2>
+        <p class="p-green">
+          Great design makes you memorable. We deliver
+          artwork that underscores your brand message
+          and captures potential clients’ attention.
+        </p>
+      </div>
+    </div>
+    <div class="orange">
+      <div class="ho">
+        <h2 class="h-blue">Photography</h2>
+        <p class="p-blue">
+          Increase your credibility by getting the most
+          stunning, high-quality photos that improve your
+          business image.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section>
+    <h3 class="testimonials-title">Client testimonials</h3>
+    <div class="profiles">
+      <div>
+        <img src="images/image-emily.jpg" alt="Emily">
+        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <p class="profile-name">Emily R.</p>
+        <p class="profile-role">Marketing Director</p>
+      </div>
+      <div>
+        <img src="images/image-jennie.jpg" alt="Thomas">
+        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <p class="profile-name">Thomas S.</p>
+        <p class="profile-role">Chief Operating Officer</p>
+      </div>
+      <div>
+        <img src="images/image-thomas.jpg" alt="Jennie">
+        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <p class="profile-name">Jennie F.</p>
+        <p class="profile-role">Business Owner</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <img src="images/desktop/image-gallery-milkbottles.jpg" alt="Gallery 1">
+    <img src="images/desktop/image-gallery-orange.jpg" alt="Gallery 2">
+    <img src="images/desktop/image-gallery-cone.jpg" alt="Gallery 3">
+    <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Gallery 4">
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3 class="footer-logo">Sunnyside</h3>
+    <div class="footer-links">
+      <p class="About">About</p>
+      <p class="Services">Services</p>
+      <p class="Projects">Projects</p>
+    </div>
+    <div class="icon">
+      <img src="images/icon-facebook.svg" alt="Facebook">
+      <img src="images/icon-instagram.svg" alt="Instagram">
+      <img src="images/icon-pinterest.svg" alt="Pinterest">
+      <img src="images/icon-twitter.svg" alt="Twitter">
+    </div>
+  </footer>
+</body>
+</html>
+
+

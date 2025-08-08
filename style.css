@@ -1,0 +1,340 @@
+/* ========== Reset ========== */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+/* ========== Header ========== */
+.header {
+  background-image: url('images/desktop/image-header.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  position: relative;
+  height: 100vh;
+}
+
+.Sunnyside {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* ========== Navigation ========== */
+.nav {
+  display: flex;
+  gap: 30px;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle img {
+  width: 25px;
+  height: auto;
+}
+
+.nav2 {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  right: 20px;
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.mobile-menu li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: hsl(210, 4%, 67%);
+}
+
+.mobile-menu a:hover {
+  background: hsl(51, 100%, 49%);
+  color: black;
+  padding: 10px 30px;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+/* ========== Responsive Navigation ========== */
+@media (max-width: 768px) {
+  .nav {
+    display: none !important;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  .nav2.active {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav2,
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+/* ========== Main Sections ========== */
+.main-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.empty, .transform, .stand {
+  width: 50%;
+  height: 600px;
+}
+
+.transform, .stand {
+  background-size: cover;
+  background-position: center;
+}
+
+.transform {
+  background-image: url('images/desktop/image-transform.jpg');
+}
+
+.stand {
+  background-image: url('images/desktop/image-stand-out.jpg');
+}
+
+.empty {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.h1 {
+  color: hsl(212, 27%, 19%);
+  font-size: 3rem;
+  margin: 0;
+}
+
+.p {
+  color: hsl(232, 10%, 55%);
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+.learn, .learn2 {
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  width: max-content;
+  padding: 10px 15px;
+  color: black;
+  cursor: pointer;
+}
+
+.learn {
+  box-shadow: 4px 4px hsl(51, 100%, 49%);
+}
+
+.learn2 {
+  box-shadow: 4px 4px hsl(7, 99%, 70%);
+}
+
+/* ========== Cherry & Orange Sections ========== */
+.cherry, .orange {
+  width: 50%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cherry {
+  background-image: url('images/desktop/image-graphic-design.jpg');
+}
+
+.orange {
+  background-image: url('images/desktop/image-photography.jpg');
+}
+
+.hch, .ho {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.h-green, .h-blue {
+  font-size: 3rem;
+  margin-top: 280px;
+  color: hsl(167, 40%, 24%);
+}
+
+.p-green, .p-blue {
+  color: hsl(198, 62%, 26%);
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
+/* ========== Testimonials ========== */
+.testimonials-title {
+  color: hsl(210, 4%, 67%);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.profiles img {
+  border-radius: 100%;
+  height: 60px;
+}
+
+.profiles div {
+  text-align: center;
+  max-width: 300px;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-role {
+  color: hsl(210, 4%, 67%);
+  margin-top: 0;
+}
+
+/* ========== Gallery ========== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* ========== Footer ========== */
+.footer {
+  width: 100%;
+  background-color: hsl(167, 63%, 75%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.footer-logo {
+  color: hsl(167, 34%, 41%);
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px;
+  color: hsl(167, 34%, 41%);
+  margin-top: 40px;
+}
+
+.icon {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.footer p:hover,
+.icon img:hover {
+  cursor: pointer;
+  color: white;
+}
+
+/* ========== Responsive Adjustments ========== */
+@media(max-width:800px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url('images/mobile/image-header.jpg');
+  }
+
+  .main-flex {
+    flex-direction: column;
+  }
+
+  .empty, .transform, .stand, .cherry, .orange {
+    width: 100%;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+}
